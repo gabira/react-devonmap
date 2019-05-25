@@ -1,7 +1,11 @@
 import React from 'react';
+import { Provider } from 'react-redux';
+import store from './store';
 
-function App() {
-  return <div>desafio react modulo 3</div>;
-}
+const App = () => (
+  <Provider store={store}>
+    <h1>Hello World</h1>
+  </Provider>
+);
 
 export default App;
